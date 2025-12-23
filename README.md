@@ -1,10 +1,9 @@
 # MDSINE2 Common Lisp Implementation
 
-重力条件下での腸内マイクロバイオータ動態解析（LGIM実験）をCommon Lispで実装しました。
+MDSINE2をLispで定量できるようにしました．
+真相学習モデル等との接続を目指す．
 
 ## プロジェクト概要
-
-このプロジェクトは、Koyo's LGIM（Linear Gravity Intestinal Microbiota）研究データを対象として、以下の機能を提供します：
 
 - **データロードと正規化**: CSV形式の16S rRNA遺伝子解析データを読み込み、相対存在度に変換
 - **探索的データ分析**: 重力応答性菌種の検出、統計比較
@@ -304,33 +303,10 @@ MDSINE2-ADVANCED> (estimate-growth-interaction-network *time-series*
 このコード実装が研究に役立つ場合は、以下をお願いします：
 
 1. オリジナルの論文を引用:
-   - MDSINE2: https://doi.org/10.1186/s40168-018-0612-3
+   - MDSINE2: https://www.nature.com/articles/s41564-025-02112-6
 
 2. このコード実装について言及（例）:
-   > "Microbiome dynamics were analyzed using a Common Lisp implementation of MDSINE2-inspired methods, with custom functions for gravity-responsive species detection and temporal stability assessment."
+   > "Learning ecosystem-scale dynamics from microbiome data with MDSINE2"
 
-## ライセンス
-
-MIT License
-
-このコードは自由に使用、修正、配布できます。
-
-## サポート
-
-- **GitHub Issues**: (リポジトリがある場合)
-- **Email**: (連絡先)
-
-## 謝辞
-
-- 福田真嗣教授（慶応大学）
-- Koyo（研究者）
-- Common Lispコミュニティ
 
 ---
-
-**バージョン**: 1.0
-**作成日**: 2025年12月23日
-**最終更新**: 2025年12月23日
-**テスト環境**: macOS 14.x + SBCL 2.3.x + Emacs 29.x
-
-EOF
